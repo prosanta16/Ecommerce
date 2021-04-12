@@ -13,6 +13,9 @@ class CategoryController extends Controller
         return view('admin.category');
     }
 
-    
+    public function manage_category()
+    {
+        return view('admin.manage_category');
+    }
 
 }

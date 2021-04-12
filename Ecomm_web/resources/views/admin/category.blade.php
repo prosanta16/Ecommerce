@@ -2,7 +2,7 @@
 
 @section('container')
 
-    <h1>Category</h1>
+    <h1 class="mb10">Category</h1>
     <a href="manage_category">
         <button type="button" class="btn btn-success">
             Add Category
