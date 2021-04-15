@@ -52,16 +52,14 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="index.html">Dashboard 1</a>
+                                <a href="{{url('admin/dashboard')}}">
+                                    <i class="fas fa-tachometer-alt">
+                                    </i>Dashboard</a>
                                 </li>
                                 <li>
-                                    <a href="index2.html">Dashboard 2</a>
-                                </li>
-                                <li>
-                                    <a href="index3.html">Dashboard 3</a>
-                                </li>
-                                <li>
-                                    <a href="index4.html">Dashboard 4</a>
+                                <a href="{{url('admin/category')}}">
+                                    <i class="fas fa-tachometer-alt">
+                                    </i>Category</a>
                                 </li>
                             </ul>
                         </li>
@@ -156,12 +154,12 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="dashboard">
+                            <a href="{{url('admin/dashboard')}}">
                                 <i class="fas fa-tachometer-alt">
                                 </i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="category">
+                            <a href="{{url('admin/category')}}">
                                 <i class="fas fa-tachometer-alt">
                                 </i>Category</a>
                         </li>
@@ -202,7 +200,7 @@
                                                 
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="logout">
+                                                <a href="{{url('admin/logout')}}">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
