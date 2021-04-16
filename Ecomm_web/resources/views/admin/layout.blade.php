@@ -8,7 +8,7 @@
     
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>@yield('page_title')</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{asset('admin_assets/css/font-face.css')}}" rel="stylesheet" media="all">
@@ -60,6 +60,11 @@
                                 <a href="{{url('admin/category')}}">
                                     <i class="fas fa-tachometer-alt">
                                     </i>Category</a>
+                                </li>
+                                <li>
+                                <a href="{{url('admin/coupon')}}">
+                                    <i class="fas fa-tachometer-alt">
+                                    </i>Coupon</a>
                                 </li>
                             </ul>
                         </li>
@@ -162,6 +167,11 @@
                             <a href="{{url('admin/category')}}">
                                 <i class="fas fa-tachometer-alt">
                                 </i>Category</a>
+                        </li>
+                        <li>
+                            <a href="{{url('admin/coupon')}}">
+                                <i class="fas fa-tachometer-alt">
+                                </i>Coupon</a>
                         </li>
                         
                     </ul>
