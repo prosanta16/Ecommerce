@@ -10,7 +10,7 @@ class CouponController extends Controller
     public function coupon()
     {
         $result['data']=Coupon::all();
-        return view('admin.Coupon',$result);
+        return view('admin.coupon',$result);
     }
 
     public function manage_coupon(Request $request, $id='')
@@ -51,6 +51,7 @@ class CouponController extends Controller
         $model->title=$request->post('title');
         $model->code=$request->post('code');
         $model->value=$request->post('value');
+        $model->status=1;
         $model->save();
 
         $request->session()->flash('message',$msg);
@@ -77,3 +78,8 @@ class CouponController extends Controller
        
     }
 }
+
+
+
+
+
