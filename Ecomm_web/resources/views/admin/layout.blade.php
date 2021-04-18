@@ -183,6 +183,11 @@
                             <i class="fas fa-window-maximize">
                                 </i>Size</a>
                         </li>
+                        <li class="@yield('color_select')">
+                            <a href="{{url('admin/color')}}">
+                            <i class="fas fa-paint-brush">
+                                </i>Color</a>
+                        </li>
                         
                     </ul>
                 </nav>
